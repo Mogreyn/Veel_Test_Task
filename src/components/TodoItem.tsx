@@ -25,7 +25,7 @@ const TodoItem = ({ todo, onDelete }: TodoItemProps) => {
       <button
         onClick={handleDelete}
         disabled={isDeleting}
-        className={`text-red-500 hover:text-red-700 bg-gray-600 hover:bg-gray-300 rounded-md p-2 ${
+        className={`text-red-500 hover:text-red-700 bg-gray-400 hover:bg-gray-300 rounded-md p-2 ${
           isDeleting ? "opacity-50 cursor-not-allowed" : ""
         }`}
       >

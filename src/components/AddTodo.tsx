@@ -8,13 +8,15 @@ const AddTodo = ({ onAddTodo }: AddTodoProps) => {
   const [success, setSuccess] = useState<boolean>(false);
 
   const handleAddTodo = async () => {
-    if (!title.trim()) {
-      setError("Please enter a task");
+    const trimmedTitle = title.trim();
+
+    if (!trimmedTitle || /\s{2,}/.test(trimmedTitle)) {
+      setError("Please enter a valid task (no multiple spaces).");
       return;
     }
 
     try {
-      await onAddTodo(title);
+      await onAddTodo(trimmedTitle);
       setTitle("");
       setError(null);
       setSuccess(true);
@@ -35,7 +37,19 @@ const AddTodo = ({ onAddTodo }: AddTodoProps) => {
         className="p-2 border rounded-md w-full text-black"
         aria-label="Todo task"
       />
-      {error && <p className="text-red-500 text-sm">{error}</p>}
+      
+      {/* A simple animation for the error message */}
+      {error && (
+        <motion.p
+          className="text-red-500 text-sm"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.3 }}
+        >
+          {error}
+        </motion.p>
+      )}
 
       <div className="flex justify-between items-center mt-2">
         <button
