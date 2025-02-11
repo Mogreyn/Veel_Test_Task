@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Veel_Test_Task
 
-## Getting Started
+# Todo App
 
-First, run the development server:
+This is a simple Todo app built with React, Next.js, Tailwind CSS and TypeScript. The app allows users to add and delete tasks, and it displays a list of tasks.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Requirements
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Before you start, make sure you have the following installed:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Node.js (v14 or higher)
+- npm or yarn (depending on your preference)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Setup
 
-## Learn More
+1. Clone this repository to your local machine:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   git clone https://github.com/your-username/todo-app.git
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Navigate to the project directory:
+    cd todo-app
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Install the dependencies:
+    npm install OR yarn install
 
-## Deploy on Vercel
+4. To start the development server:
+    npm run dev OR yarn dev
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+P.S. It was a great experience to work on this project.
+ I’ve been working more closely with Tailwind CSS,
+  and I appreciate this opportunity. I haven’t resolved 
+  the hydration issue yet, but I’m actively learning 
+  how to fix it and will address it as soon as possible.
+
+My contact page https://mogreyn.github.io/My_page/
