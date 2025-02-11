@@ -37,7 +37,7 @@ const AddTodo = ({ onAddTodo }: AddTodoProps) => {
         className="p-2 border rounded-md w-full text-black"
         aria-label="Todo task"
       />
-      
+
       {/* A simple animation for the error message */}
       {error && (
         <motion.p
