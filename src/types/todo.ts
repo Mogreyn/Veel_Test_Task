@@ -28,3 +28,10 @@ export interface TodoItemProps {
   onDelete: (id: number) => void; 
   onToggleComplete: (id: number) => void; 
 }
+
+export interface Todo {
+  id: number;
+  title: string;
+  completed: boolean;
+}
+
